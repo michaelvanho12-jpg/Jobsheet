@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Myon web</title>
+        <link rel="icon" type="image/x-icon" href="images/gambarfavicon.png">
+    </head>
+
+    <!-- Bagian header -->
+
+    <body bgcolor="#f2ebda">
+        <table width="100%" cellpadding="10px" cellspacing="0px">
+            <tr background="images/backgroundheader.png">
+                <th width="10%"><img src="images/gambarheader.png" alt="Header Image" width="100%" height="100%"></th>
+                <th width="80%" colspan="3" align="center"><font face="Verdana"><h1><marquee behavior="alternate" scrollamount="12">Guestbook</marquee></h1></th>
+                <th width="10%"><img src="images/gambarheader.png" alt="Header Image" width="100%" height="100%"></th>
+            </tr>
+            <tr>
+                <td align="center" title="Home"><a href="index.html">
+                <font color="#000000" size="5">🏠︎</font><br>
+                <font face="Verdana"><font color="#000000">Home</font></a></td>
+                <td align="center" title="Profile"><a href="profile.html">
+                <font color="#000000" size="5">✦</font><br>
+                <font face="Verdana"><font color="#000000">Profile</font></a></td>
+                <td align="center" title="Gallery"><a href="gallery.html">
+                <font color="#000000" size="5">▩</font><br>
+                <font face="Verdana"><font color="#000000">Gallery</font></a></td>
+                <td align="center" title="Article"><a href="article.html">
+                <font color="#000000" size="5">⫶☰</font><br>
+                <font face="Verdana"><font color="#000000">Article</font></a></td>
+                <td align="center" title="Guestbook">
+                    <table width="auto">
+                        <tr bgcolor="#a69977">
+                            <td align="center"><a href="guestbook.html">
+                            <font color="#ffffff" size="5">✎</font><br>
+                            <font face="Verdana"><font color="#ffffff">Guestbook</font></a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <hr width="100%" size="1px" color="#6e5146">
+        <br>
+        <h1><font face="Verdana">Terimakasih sudah berkunjung!</font></h1>
+
+        <!-- Bagian form textarea tamu -->
+
+        <form action="guestbook.html#form" method="post">
+            <fieldset>
+                <legend><font face="Verdana"><strong>Tulis pesan</strong></font></legend>
+                <table cellpadding="1" width="50%">
+                    <tr>
+                        <td><label for="nama"><font face="Verdana">Nama</font></label></td>
+                        <td>:<input type="text" id="nama" name="nama" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email"><font face="Verdana">Email</font></label></td>
+                        <td>:<input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Jenis Kelamin"><font face="Verdana">Jenis Kelamin</font></label></td>
+                        <td>:<input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" required><label for="perempuan"><font face="Verdana">Perempuan</font></label></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>:<input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki" required><label for="laki-laki"><font face="Verdana">Laki-laki</font></label></td>
+                    </tr>
+                    <tr>
+                        <td><label><font face="Verdana">Pesan</font></label></td>
+                        <td>:<textarea id="pesan" name="pesan" rows="6" required></textarea></td>
+                    </tr>
+                </table>
+                <br><input type="reset" name="btn" id="button" value="Reset">
+                <input type="submit" name="btn" id="button" value="Submit">
+            </fieldset>
+        </form>
+        <p align="center"><font face="Verdana" size="2px">@ 2026 Michael Vanho Adrian. Hak cipta dilindungi undang-undang.</font></p>
+    </body>
+</html>
